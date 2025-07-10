@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+@media (min-width: 700px) {
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* cabecalho e menu*/
+header img#logo {
+  width: 300px;
+  height: 115px;
+  margin-top: -10px;
+}
+header nav#menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 14px 16px 14px 16px;
+  margin: 0px;
+  border: 1px solid rgb(0, 70, 152);
+  background-color: rgb(0, 70, 152);
+  color: white;
+  transition: 0.2s;
+}
+header nav#menu ul li a#NF-e {
+  border: 1px solid rgb(4, 170, 109);
+  background-color: rgb(4, 170, 109);
+  color: white;
+}
+header nav#menu ul li a:hover {
+  color: black;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+}
+header nav#menu ul {
+  display: block;
+  list-style-type: none;
+  display: flex;
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  margin-top: -10px;
+}
+header div#container-inicial {
+  width: auto;
+  height: auto;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  margin: 0px;
+  background: linear-gradient(to right, #ff8c42, #ffb347);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+}
+header div#container-inicial h1 {
+  font-size: 30pt;
+}
+header div#container-inicial p {
+  font-size: 20pt;
+}
+/*principal*/
+body main {
+  margin: 50px;
+  text-indent: 100px;
+}
+body h2 {
+  text-indent: 50px;
+}
+
+i {
+  color: #ff8c42;
+}
+i#voltar {
+  color: inherit;
+}
+body div#grade-opcoes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  text-indent: 0px;
+}
+body div#grade-opcoes span {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+body div#grade-opcoes a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 30px;
+  transition: 0.2s;
+  border-radius: 8px;
+}
+body div#grade-opcoes a:hover {
+  background-color: #ddd;
+}
+body div#grade-opcoes span i {
+  font-size: 30pt;
+  text-align: left;
+}
+body button {
+  display: inline-block;
+  width: 150px;
+  border-radius: 10px;
+  margin-left: 46%;
+  background-color: #6c757d;
+  border: none;
+  transition: 0.2s;
+}
+body button:hover {
+  background-color: #5a6268;
+}
+body button p {
+  font-size: 18pt;
+  color: white;
+}
+/*rodape*/
+footer{
+    background-color: #006633;
+    margin-bottom: -20px;
+}
+footer p{
+    text-align: center;
+    color: white;
+}
+footer div {
+  background-color: #114874;
+  margin-top: 10px;
+  padding: 10px;
+}
+footer ul#principal {
+  display: flex;
+  list-style: none;
+  margin-left: 350px;
+}
+footer ul#principal li {
+  display: block;
+  color: #114874;
+  background-color: #c4b135;
+  margin: 10px;
+  padding: 10px;
+  width: 366px;
+  font-size: 18pt;
+  text-align: center;
+}
+footer ol#principal {
+  display: flex;
+  list-style: none;
+  color: white;
+  margin-left: 300px;
+}
+footer ol#principal li {
+  display: inline-block;
+  margin-right: 75px;
+  margin-left: 75px;
+  text-align: center;
+  font-size: 18pt;
+}
+footer ul#secundario {
+  display: flex;
+  list-style: none;
+  margin-left: 350px;
+}
+footer ul#secundario li {
+  color: #c4b135;
+  font-size: 18pt;
+  margin: 10px;
+  margin-right: 130px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+footer ul#secundario2 {
+  display: flex;
+  list-style: none;
+}
+footer ul#secundario2 li{
+    margin-left: 165px;
+    margin-right: -75px;
+}
+footer ul#secundario2 a{
+    text-decoration: none;
+    color: inherit;
+}
+footer ul#secundario2 a:hover{
+    text-decoration: underline;
+    color:#a2afb9;
+}
+footer ol#secundario1 {
+  display: block;
+  list-style: none;
+  color: white;
+  font-weight: 450;
+  font-size: 15pt;
+  width: 200px;
+}
+footer ol#secundario1 li {
+  margin-bottom: 5px;
+  margin-right: 0px;
+  width: 200px;
+}
+footer ol#secundario2 {
+  display: block;
+  list-style: none;
+  color: white;
+  font-weight: 450;
+  font-size: 15pt;
+  width: 200px;
+}
+footer ol#secundario2 li {
+  margin-bottom: 5px;
+  margin-right: 0px;
+  width: 200px;
+}
+footer ol#secundario3 {
+  display: block;
+  list-style: none;
+  color: white;
+  font-weight: 450;
+  font-size: 15pt;
+  width: 200px;
+}
+footer ol#secundario3 li {
+  margin-bottom: 5px;
+  margin-right: 0px;
+  width: 200px;
+}
+footer ol#secundario4 {
+  display: block;
+  list-style: none;
+  color: white;
+  font-weight: 450;
+  font-size: 15pt;
+  width: 200px;
+  margin-left: 70px;
+}
+footer ol#secundario4 li {
+  margin-bottom: 5px;
+  margin-right: 0px;
+  width: 200px;
+}
