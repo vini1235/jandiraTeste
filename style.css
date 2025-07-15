@@ -119,13 +119,13 @@ body button p {
   color: white;
 }
 /*rodape*/
-footer{
-    background-color: #006633;
-    margin-bottom: -20px;
+footer {
+  background-color: #006633;
+  margin-bottom: -20px;
 }
-footer p{
-    text-align: center;
-    color: white;
+footer p {
+  text-align: center;
+  color: white;
 }
 footer div {
   background-color: #114874;
@@ -176,17 +176,17 @@ footer ul#secundario2 {
   display: flex;
   list-style: none;
 }
-footer ul#secundario2 li{
-    margin-left: 165px;
-    margin-right: -75px;
+footer ul#secundario2 li {
+  margin-left: 165px;
+  margin-right: -75px;
 }
-footer ul#secundario2 a{
-    text-decoration: none;
-    color: inherit;
+footer ul#secundario2 a {
+  text-decoration: none;
+  color: inherit;
 }
-footer ul#secundario2 a:hover{
-    text-decoration: underline;
-    color:#a2afb9;
+footer ul#secundario2 a:hover {
+  text-decoration: underline;
+  color: #a2afb9;
 }
 footer ol#secundario1 {
   display: block;
