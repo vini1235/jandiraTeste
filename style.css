@@ -20,7 +20,7 @@ body {
   min-height: 100vh;
 }
 
-/* cabecalho e menu*/
+/* cabecalho e menu */
 header {
   width: 100%;
 }
@@ -30,6 +30,7 @@ header img#logo {
   height: 115px;
   margin-top: -10px;
 }
+
 header nav#menu ul li a {
   text-decoration: none;
   color: white;
@@ -39,15 +40,18 @@ header nav#menu ul li a {
   background-color: rgb(0, 70, 152);
   transition: 0.2s;
 }
+
 header nav#menu ul li a#NF-e {
   border: 1px solid rgb(4, 170, 109);
   background-color: rgb(4, 170, 109);
 }
+
 header nav#menu ul li a:hover {
   color: black;
   background-color: #ddd;
   border: 1px solid #ddd;
 }
+
 header nav#menu ul {
   position: absolute;
   list-style-type: none;
@@ -59,6 +63,7 @@ header nav#menu ul {
   margin-top: -70px;
   padding: 0;
 }
+
 header div#container-inicial {
   width: 100%;
   box-sizing: border-box;
@@ -69,13 +74,16 @@ header div#container-inicial {
   font-weight: 300;
   color: #ffffff;
 }
+
 header div#container-inicial h1 {
   font-size: 2rem;
 }
+
 header div#container-inicial p {
   font-size: 1.25rem;
 }
-/*principal*/
+
+/* principal */
 main {
   flex: 1;
   width: 100%;
@@ -84,22 +92,27 @@ main {
   padding: 32px 16px;
   box-sizing: border-box;
 }
+
 main h2 {
   text-indent: 0;
   margin-bottom: 16px;
 }
+
 i {
   color: #ff8c42;
 }
+
 i#voltar {
   color: inherit;
 }
+
 #grade-opcoes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   margin: 24px 0;
 }
+
 #grade-opcoes span {
   background-color: #f8f9fa;
   border-radius: 8px;
@@ -113,146 +126,128 @@ i#voltar {
   transition: 0.2s;
   border-radius: 8px;
 }
+
 #grade-opcoes a:hover {
   background-color: #ddd;
 }
+
 #grade-opcoes span i {
   font-size: 30pt;
   text-align: left;
 }
-button {
-  display: block;
-  width: 180px;
-  max-width: 100%;
-  border-radius: 10px !important;
-  margin: 32px auto 0 auto !important;
+
+a.botao {
+  display: inline-block;
   background-color: #6c757d;
-  border: none;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 18pt;
+  text-align: center;
   transition: 0.2s;
+  margin: 32px auto 0 auto;
+  max-width: 100%;
+  width: fit-content;
 }
-button:hover {
+
+a.botao:hover {
   background-color: #5a6268;
+  color: white;
+  text-decoration: none;
 }
-button p {
+
+a.botao p {
   font-size: 18pt;
   color: white;
   margin: 0;
 }
-/*rodape*/
-footer{
-    background-color: #114874;
-    margin-top: 20px;
-    width: 100%;
-}
-footer p{
-    text-align: center;
-    color: white;
-    margin: 0;
-    padding: 12px 0;
-}
-footer div {
+
+footer.footer {
   background-color: #114874;
-  margin-top: 10px;
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  overflow-x: auto;
-}
-footer ul#principal, footer.ul#secundario, footer ul#secundario2 {
-  width: 100%;
-}
-footer ul#principal {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-footer ul#principal li {
-  color: #114874;
-  background-color: #c4b135;
-  margin: 10px;
-  padding: 10px;
-  min-width: 200px;
-  font-size: 1.1rem;
-  text-align: center;
-}
-footer ol#principal {
-  display: flex;
-  list-style: none;
   color: white;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-footer ol#principal li {
-  margin: 8px 24px;
-  text-align: center;
-  font-size: 1.1rem;
-}
-footer ul#secundario {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 10px 0 0 0;
-  padding: 0;
-}
-footer ul#secundario li {
-  color: #c4b135;
-  font-size: 1rem;
-  margin: 10px 24px;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
-}
-footer ul#secundario2 {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-footer ul#secundario2 li{
-    margin: 10px 24px;
-}
-footer ul#secundario2 a{
-    text-decoration: none;
-    color: inherit;
-}
-footer ul#secundario2 a:hover{
-    text-decoration: underline;
-    color:#a2afb9;
-}
-footer div#rodape{
-  background-color: #006633;
-}
-footer ol#secundario1,
-footer ol#secundario2,
-footer ol#secundario3,
-footer ol#secundario4 {
-  display: block;
-  list-style: none;
-  color: white;
-  font-weight: 450;
-  font-size: 1rem;
-  width: 180px;
-  margin: 0 auto;
-  padding: 0;
-}
-footer ol#secundario1 li,
-footer ol#secundario2 li,
-footer ol#secundario3 li,
-footer ol#secundario4 li {
-  margin-bottom: 5px;
   width: 100%;
+  margin-top: 20px;
+  font-size: 1rem;
 }
 
+footer.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+footer h6{
+  border-bottom: 3px solid rgba(255, 255, 255, .05);
+}
+footer.footer a:hover {
+  color: #c4b135;
+  text-decoration: underline;
+}
+
+div.footer-top {
+  padding: 20px 16px;
+}
+
+div.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+div.footer-info div.info-bloco {
+  background-color: #c4b135;
+  color: #114874;
+  padding: 16px;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+
+div.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+div.footer-col {
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+div.footer-col h6 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #c4b135;
+  text-transform: uppercase;
+}
+
+div.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.footer-col ul li {
+  margin-bottom: 6px;
+}
+
+div.footer-bottom {
+  background-color: #006633;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* media */
 @media (max-width: 900px) {
   #grade-opcoes {
     grid-template-columns: 1fr;
   }
+
   main {
     padding: 24px 4px;
   }
@@ -265,17 +260,25 @@ footer ol#secundario4 li {
     margin: 0 auto;
     display: block;
   }
+
   header div#container-inicial {
     padding: 40px 5px;
   }
+
   #grade-opcoes a {
     padding: 12px;
   }
-  button {
-    width: 98vw;
-    margin: 24px auto 0 auto;
+
+ 
+  .footer-info,
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
   }
-  footer div {
-    padding: 5px;
+
+  .footer-info .info-bloco,
+  .footer-col {
+    max-width: 100%;
+    width: 100%;
   }
 }
