@@ -25,6 +25,7 @@ body {
 header {
   width: 100%;
   background-color: rgb(0, 70, 152);
+  position: relative;
 }
 
 header img#logo {
@@ -46,10 +47,6 @@ i#burguer:hover {
   background-color: white;
 }
 
-header nav#menu {
-  display: none;
-  
-}
 header nav#menu ul li a {
   text-decoration: none;
   color: white;
@@ -92,7 +89,21 @@ header nav#menu ul {
   padding: 0;
   width: fit-content;
 }
+@media (min-width: 768px) {
+  i#burguer {
+    display: none;
+  }
 
+  header nav#menu {
+    display: block !important;
+  }
+header nav#menu {
+  display: none;
+  position: absolute;
+  top: 5%;
+  right: 0;
+}
+}
 header div#container-inicial {
   width: 100%;
   box-sizing: border-box;
