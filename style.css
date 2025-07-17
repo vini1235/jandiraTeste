@@ -95,14 +95,39 @@ header nav#menu ul {
   }
 
   header nav#menu {
-    display: block !important;
+    display: flex !important;
   }
 header nav#menu {
   display: none;
   position: absolute;
   top: 5%;
-  right: 0;
+  right: 1%;
 }
+}
+@media (max-width: 900px) {
+  header nav#menu {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background: rgb(0, 70, 152);
+    z-index: 99;
+  }
+  header nav#menu.open {
+    max-height: 500px; /* ajuste conforme o tamanho do menu */
+  }
+  header nav#menu ul {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+  }
 }
 header div#container-inicial {
   width: 100%;
