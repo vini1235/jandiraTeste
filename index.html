@@ -17,6 +17,7 @@
   <body>
     <header id="cabecalho">
       <img src="./logo_2.png" id="logo" />
+      <i class="bi bi-list" id="burguer" onclick="clickMenu()"></i>
       <nav id="menu">
         <ul>
           <li><a href="https://jandira.sp.gov.br/index.php">Início</a></li>
@@ -288,4 +289,14 @@
       </p>
     </div>
   </footer>
+  <script>
+    function clickMenu(){
+      if(menu.style.display == 'block'){
+        menu.style.display = 'none';
+      }
+      else{
+      menu.style.display = 'block';
+    }
+    }
+  </script>
 </html>
