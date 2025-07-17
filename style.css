@@ -45,15 +45,6 @@ i#burguer:hover {
   color: rgba(0, 0, 0);
   background-color: white;
 }
-@media (min-width: 768px) {
-  i#burguer {
-    display: none;
-  }
-
-  header nav#menu {
-    display: block !important;
-  }
-}
 
 header nav#menu {
   display: none;
