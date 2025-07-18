@@ -46,7 +46,9 @@ i#burguer:hover {
   color: rgba(0, 0, 0);
   background-color: white;
 }
-
+#menu{
+  display: none;
+}
 header nav#menu ul li a {
   text-decoration: none;
   color: white;
@@ -89,21 +91,7 @@ header nav#menu ul {
   padding: 0;
   width: fit-content;
 }
-@media (min-width: 768px) {
-  i#burguer {
-    display: none;
-  }
 
-  header nav#menu {
-    display: flex !important;
-  }
-header nav#menu {
-  display: none;
-  position: absolute;
-  top: 5%;
-  right: 1%;
-}
-}
 header div#container-inicial {
   width: 100%;
   box-sizing: border-box;
@@ -202,7 +190,7 @@ a.botao p {
   color: white;
   margin: 0;
 }
-
+/*footer*/
 footer.footer {
   background-color: #114874;
   color: white;
@@ -283,6 +271,21 @@ div.footer-bottom {
 }
 
 /* media */
+@media (min-width: 768px) {
+  i#burguer {
+    display: none;
+  }
+
+  header nav#menu {
+    display: flex !important;
+  }
+header nav#menu {
+  display: none;
+  position: absolute;
+  top: 5%;
+  right: 1%;
+}
+}
 @media (max-width: 900px) {
   #grade-opcoes {
     grid-template-columns: 1fr;
